@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(76, 27, 106);
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(230, 230, 230);
+}
+
+.link {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.link a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+}
+
+.link a:hover {
+  opacity: 0.7;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction .instructions {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.green-gel {
+  position: absolute;
+  left: 50px;
+  bottom: 50vh;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(67, 227, 64);
+}
+
+.pink-gel {
+  position: absolute;
+  right: 50px;
+  bottom: 50vh;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(240, 90, 210);
+}
+
+.blob {
+  position: absolute;
+  bottom: 50vh;
+  left: 150px;
+  width: 200px;
+  height: 150px;
+  border-radius: 100px 100px 50px 50px;
+  background-color: rgb(67, 227, 64);
+  transition-property: all;
+  transition-duration: 0.25s; 
+}
+
+.blob .eye-container {
+  display: flex;
+  position: relative;
+  top: 45px;
+  left: 75px;
+}
+
+.blob .eye-container .eye {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin: 3px;
+}
+
+.blob .eye-container .eye::after {
+  position: relative;
+  top: 15px;
+  left: 25px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
